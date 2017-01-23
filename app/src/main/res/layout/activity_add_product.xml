@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_product"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.zar.inventory.AddProductActivity">
+
+    <!-- Overview category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="@string/category_overview"
+            style="@style/CategoryStyle" />
+
+        <!-- Input fields -->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp"
+            android:orientation="vertical">
+
+            <!-- Name field -->
+            <EditText
+                android:id="@+id/edit_product_name"
+                android:hint="@string/hint_product_name"
+                android:inputType="textCapWords"
+                style="@style/EditorFieldStyle" />
+
+            <!-- Breed field -->
+            <EditText
+                android:id="@+id/edit_product_price"
+                android:hint="@string/hint_product_price"
+                android:inputType="number"
+                style="@style/EditorFieldStyle" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <!-- Measurement category -->
+    <LinearLayout
+        android:id="@+id/container_measurement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="@string/category_measurement"
+            style="@style/CategoryStyle" />
+
+        <!-- Input fields -->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:paddingLeft="4dp">
+
+            <Button
+                android:id="@+id/btn_dec"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:text="-"
+                />
+
+            <EditText
+                android:id="@+id/edit_product_quantity"
+                android:hint="@string/hint_product_quantity"
+                android:inputType="number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/EditorFieldStyle"/>
+
+
+            <Button
+                android:id="@+id/btn_inc"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:text="+"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/container_supplier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="@string/txt_supplier_name"
+            style="@style/CategoryStyle" />
+
+        <!-- Input fields -->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:paddingLeft="4dp">
+
+
+
+            <EditText
+                android:id="@+id/edit_supplier_name"
+                android:hint="@string/hint_supplier_name"
+                
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                style="@style/EditorFieldStyle"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

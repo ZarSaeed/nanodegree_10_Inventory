@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     >
+        <TextView
+            android:id="@+id/list_txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Name"
+            android:padding="15dp"
+            android:fontFamily="sans-serif-medium"
+            android:textAppearance="?android:textAppearanceMedium"
+            />
+       <!-- <TextView
+            android:id="@+id/list_txt_rs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/list_txt_price"
+            android:text="Rs"
+            android:paddingTop="10dp"
+
+            android:fontFamily="sans-serif-medium"
+            android:textAppearance="?android:textAppearanceMedium" />-->
+        <TextView
+            android:id="@+id/list_txt_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Price"
+            android:padding="15dp"
+            android:fontFamily="sans-serif-medium"
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/list_txt_name">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stock :"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#A2AAB0"
+                android:padding="15dp"/>
+            <TextView
+                android:id="@+id/list_txt_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#A2AAB0"
+                android:fontFamily="sans-serif"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/list_btn_sell"
+            android:focusable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sell"
+            android:layout_below="@+id/list_txt_price"
+            android:layout_alignParentRight="true"
+            android:fontFamily="sans-serif-medium"
+            android:textAppearance="?android:textAppearanceMedium"/>
+    </RelativeLayout>
+
+</LinearLayout>
